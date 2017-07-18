@@ -2,9 +2,10 @@ MapMap is an open source video mapping software.
 
 # Download and install
 Use the latest version of MapMap you can find at these links:
+- [Source code Git repository of MapMap](https://github.com/mapmapteam/mapmap)
 - [Download MapMap for macOS](http://download.mapmap.info/osx/)
 - [Download MapMap for Windows](http://download.mapmap.info/windows/)
-- [Source code of MapMap](http://download.mapmap.info/tarballs/)
+- [Source code tarballs of MapMap](http://download.mapmap.info/tarballs/)
 - [Install MapMap on Ubuntu GNU/Linux](https://launchpad.net/~mapmap/+archive/ubuntu/mapmap)
 
 # Documentation
