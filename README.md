@@ -61,3 +61,12 @@ To load a project from a file, choose "File > Open...".
 - [MapMap mailing list](https://listes.koumbit.net/cgi-bin/mailman/listinfo/mapmap-list-mapmap.info)
 - The #mapmap IRC channel on Freenode
 - Write to us at info at mapmap dot info
+
+# Partners
+
+MapMap is made possible thanks to the generous support of the following organizations:
+- [Organisation Internationale de la Francophonie](https://www.francophonie.org)
+- [Perte de Signal](http://perte-de-signal.org)
+- [Ker Thiossane](http://www.ker-thiossane.org)
+- [Conseil des Arts et des Lettres du Québec](https://www.calq.gouv.qc.ca)
+- [Millumin](http://www.millumin.com)
