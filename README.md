@@ -1,20 +1,50 @@
-MapMap is an open source video mapping software.
+## Overview
+MapMap is a free software of projection mapping which is mainly aimed at artists and small teams. Its intuitive interface facilitates learning and promotes artistic expression. This software is available on Windows, OSX, and Linux. MapMap gives users the ability to projection map on any surface of choice. Mapmap takes media sources and gives users the ability to manipulate the media into different positions and shapes. Media sources can come from any various accepted media formats. With an easy to understand interface, new users can get started in minutes.
 
-# Download and install
-Use the latest version of MapMap you can find at these links:
+View MapMap in action!
+[![IMapMap  video](http://projection-mapping.org/wp-content/uploads/2017/08/mapmap-workshop.jpg)](https://vimeo.com/177538718)
+
+
+## Installation
+# Download and install the newest version
+The latest version of MapMap can be find at these links:
 - [Source code Git repository of MapMap](https://github.com/mapmapteam/mapmap)
 - [Download MapMap for macOS](http://download.mapmap.info/osx/)
 - [Download MapMap for Windows](http://download.mapmap.info/windows/)
 - [Source code tarballs of MapMap](http://download.mapmap.info/tarballs/)
 - [Install MapMap on Ubuntu GNU/Linux](https://launchpad.net/~mapmap/+archive/ubuntu/mapmap)
 
-# Documentation
-How to use MapMap to create to do video mapping.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Launching the application
-On Apple OS X, open the application by either double-clicking on its icon in the Finder, or by clicking on its icon in the Dock. To display more information about the errors that might occur, launch MapMap from the command line. To do so, open the Terminal application, that is located in /Applications/Utilities, type this: /Applications/mapmap.app/Contents/MacOS/MapMap, and hit the Return key.
+On Apple OS X, open the application by either double-clicking on its icon in the Finder, or by clicking on its icon in the Dock.
+ To display more information about the errors that might occur, launch MapMap from the command line. To do so, open the Terminal application, that is located in /Applications/Utilities 
 
-On Debian or Ubuntu GNU/Linux, find its icon in the application menu and activate it. You can also run it via the command-line by typing "mapmap".
+
+
+
+Then type this: /Applications/mapmap.app/Contents/MacOS/MapMap, and hit the Return key.
+
+
+On Debian or Ubuntu GNU/Linux, find its icon in the application menu and click it. You can also run it via the command-line by typing "mapmap".
+
+On Windows, click on the windows icon and type in mapmap. Click on the MapMap icon to then launch the program.  
 
 ## Paints and mappings
 A paint is some materials to be drawn. Currently supported paint types are color paint and media paint.
@@ -57,6 +87,8 @@ To save the current project, choose "File > Save as..." and then choose a file n
 ## Load a project from a file
 To load a project from a file, choose "File > Open...".
 
+
+
 # Support or Contact
 - [MapMap mailing list](https://listes.koumbit.net/cgi-bin/mailman/listinfo/mapmap-list-mapmap.info)
 - The #mapmap IRC channel on Freenode
@@ -70,3 +102,5 @@ MapMap is made possible thanks to the generous support of the following organiza
 - [Ker Thiossane](http://www.ker-thiossane.org)
 - [Conseil des Arts et des Lettres du Québec](https://www.calq.gouv.qc.ca)
 - [Millumin](http://www.millumin.com)
+
+
