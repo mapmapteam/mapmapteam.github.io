@@ -1,0 +1,58 @@
+Goal: To make short and simple video tutorials for MapMap.
+
+To do: 
+select sample videos and images to use for editing. 
+Connect documentation and video tutorials 
+Tutorial on how to import to the library
+
+Welcome to this tutorial on how to import sources into Mapmap. Sources within MapMap consist of media files images and videos as well as solid colors. Importing video and images can be down in two different ways.
+
+The easiest way to do it is to locate the files on your computer and then drag and drop them into the library window.
+
+ (show example of this)
+
+The second way to do this is to click on the “import a video or image file.” icon. Then, a window will assist you with selecting files. Once the files are selected, you will see them appear in the library window. 
+
+(show example of this)
+
+A shortcut to add sources is crtl + i on windows and linux or command + i on mac. 
+
+To import solid colors as a layer option, select the “add a color paint” option and use the color picker to select a color. You have the option to pick a screen color, (show this) pick a basic color (show this), or select a color by either entering the hue, saturation, and value, or entering red, green, blue and alpha channel (show this). The hexadecimal color value is shown at the bottom of the window.
+
+To create a custom color pallette, you must first create the color within the color picker and then click “add to custom colors”. Then, the color will appear one of the open white slots. (show this)
+
+When you have your desired colors, click ok and they will be added to your library.
+
+(show what imported media we have) 
+
+Tutorial on how to make and edit new layers 
+
+Now that you’ve learned how to import sources it is possible to start creating layers. Layers are modified media sources that we can modify to change their appearance. 
+
+To begin making a new layer, you have to select the source you want to use from the library and then select what kind of basic shape we would like to use from the top menu. You have the options of mesh (which can be thought of as a rectangle), triangle and circle. Once a shape has been picked it appears in both in the input editor and output editor windows
+
+Within the mapping window, you have the ability to modify visibility, lock a shape, duplicate, and delete. 
+
+(show examples of each of these things happening)
+
+Tutorial on input and output editors
+
+In the output editor, you can select what portion of the media you would like to have displayed as output. This is useful for cutting out things in a media file you don’t want to have shown. An example would be black bars around an image or video.
+
+(show this)
+
+This selection will now be shown in the output editor. The content of the output editor is what will actually be projection mapped. In this window, you can edit the shape and position of what is being projected. 
+
+(show example of mapping on pyramid)
+
+Tutorial of Property Window
+The property window allows for opacity editing, input shape and output shape virtex editing.
+
+For mesh objects it is possible to add vertices 
+
+(show examples of this)
+
+
+
+Other tutorials?
+
