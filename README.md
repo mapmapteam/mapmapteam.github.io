@@ -1,3 +1,5 @@
+# MapMap - open source video mapping software
+
 ## Overview
 MapMap is a free, open source software for projection mapping aimed at artists and small teams. Its intuitive interface facilitates learning and promotes artistic expression. This software is available on Windows, OSX, and Linux. MapMap gives users the ability to projection map on any surface of choice. Mapmap takes media sources and gives users the ability to manipulate the media into different positions and shapes. Media sources can come from any various accepted media formats. With an easy to understand interface, new users can get started in minutes.
 
@@ -27,37 +29,37 @@ To load a project from a file, choose "File > Open...".
 
 ![file_open_document](documentation_images/open_document.png)
 
-
 ## Save the project to a file
 To save the current project, choose "File > Save as..." and then choose a file name. The extension file is ".mmp", but the file format is simply XML, a very common one.
 
 ![file_save_as](documentation_images/save_as.png)
 
-
 ## Layout
 MapMap consists of several different windows, icons, and menu options. The main windows are the Library, Layers, Input Editor and Output Editor.
 
-![layout](https://github.com/matthewloe/mapmapteam.github.io/blob/master/documentation_images/layout.png)
+![layout](documentation_images/layout.png)
 
 ## Library
 The Library contains the collection of sources that can be used in MapMap. The supported sources are color shapes, video (see preferred video formats below), still images including animated GIFs, webcams (currently on Linux version only) and more to come.
 
 Imported media can be viewed within the library. Importing new media can be done in multiple ways:
-Clicking on file -> import media file
-Hitting CTRL+I
-Clicking the icon in the toolbar
-Drag and drop media directly into library window
+- Clicking on file -> import media file
+- Hitting CTRL+I
+- Clicking the icon in the toolbar
+- Drag and drop media directly into library window
 
 Preferred Video Formats:
+
 Containers:
-.mov
-.avi
-.mp4
-.ogg / .ogv
+- .mov
+- .avi
+- .mp4
+- .ogg / .ogv
+
 Video codec formats:
-Motion-JPEG / Photo-JPEG
-MPEG4
-Apple Pro Res 422
+- Motion-JPEG / Photo-JPEG
+- MPEG4
+- Apple Pro Res 422
 
 ![import_media_file](documentation_images/import_media_file.png)
 
@@ -105,7 +107,6 @@ Options for the Layer Inspector menu:
 
 ![inspector_window_options](documentation_images/inspector_window_options.png)
 
-
 Options for the Library Inspector menu:
 1.Source opacity can be changed on a 0 to 100% scale.
 2.Source location can be modified by clicking on the … button so that a source can be swapped for another or relocated on the users hard drive.
@@ -113,7 +114,6 @@ Options for the Library Inspector menu:
 4.Source audio volume can be changed on a 0 to 100% scale.
 
 ![inspector_window](documentation_images/inspector_window.png)
-
 
 ## Meshes
 Currently supported mesh shapes are: Quads/Mesh, Triangle and Ellipse. When quads have a dimension of two by two (2x2) vertices, they are called Quads. When they have more than 2x2 vertices, they are called A Mesh. A Mesh is a grid of vertices that allow more flexible mapping for complex output shapes.
@@ -123,10 +123,10 @@ To create a Quad / Mesh, Triangle or Ellipse,  choose a source in the library an
 ![verted_editor](documentation_images/vertex_editing.png)
 
 Meshes can also be transformed via a set of transform controls.  Click on a vertices and then use the following keyboard shortcuts to activate the controls.
+
 M = Move
 
 ![move_tool](documentation_images/move_tool.png)
-
 
 R = Rotate
 
@@ -135,7 +135,6 @@ R = Rotate
 S = Scale
 
 ![scale_tool](documentation_images/scale_tool.png)
-
 
 ## Full Screen Mode
 Before projection mapping onto a surface check the system preferences on your machine to make sure your computer is not set on mirroring, but instead is set so that your projector is an external / additional monitor.  Then use the Toggle Full Screen icon at the top of the MapMap Menu  to send the output editor content to your projector or external monitor. 
@@ -165,5 +164,3 @@ MapMap is made possible thanks to the generous support of the following organiza
 - [Conseil des Arts et des Lettres du Québec](https://www.calq.gouv.qc.ca)
 - [Millumin](http://www.millumin.com)
 - Alton ’38 and Adelaide Hamm Campus Activity Fund
-
-
