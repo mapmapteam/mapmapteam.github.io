@@ -25,6 +25,7 @@ On Windows, click on the windows icon and type in mapmap. Click on the MapMap ic
 ## Load a project from a file
 To load a project from a file, choose "File > Open...".
 
+![file_open_document](https://github.com/matthewloe/mapmapteam.github.io/blob/master/documentation_images/open_document.png)
 
 
 ## Save the project to a file
