@@ -10,7 +10,7 @@ View MapMap in action!
 # Download and install the newest version
 The latest version of MapMap can be find at these links:
 - [Source code Git repository of MapMap](https://github.com/mapmapteam/mapmap)
-- [Download MapMap for macOS](http://download.mapmap.info/osx/)
+- [Download MapMap for macOS](http://download.mapmap.info/osx/) - Note that macOS users need to also install [GStreamer](https://gstreamer.freedesktop.org/data/pkg/osx/1.14.0/gstreamer-1.0-1.14.0-x86_64.pkg) separately.
 - [Download MapMap for Windows](http://download.mapmap.info/windows/)
 - [Source code tarballs of MapMap](http://download.mapmap.info/tarballs/)
 - [Install MapMap on Ubuntu GNU/Linux](https://launchpad.net/~mapmap/+archive/ubuntu/mapmap)
