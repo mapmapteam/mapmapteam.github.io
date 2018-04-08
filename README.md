@@ -82,9 +82,7 @@ To the right of the library tab is the layers tab. Layers are media sources that
 
 Layers can be deleted by selecting it in the layer list, and then choosing the "Edit > Delete" menu item.
 
-missing this image!
-//![delete_layer](https://github.com/matthewloe/mapmapteam.github.io/blob/master/documentation_images/shape_icons.png)
-
+[delete_layer](https://github.com/matthewloe/mapmapteam.github.io/blob/master/documentation_images/delete_layer.png)
 
 Layers can be rearranged by dragging them on top of or below each other. Doing this also controls the layer arrangement in the output editor. Layers add vertices to the source which allows the source to be edited in a variety of ways. 
 Next to  each layer name, there are five icons:
