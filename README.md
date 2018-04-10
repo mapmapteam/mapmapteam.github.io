@@ -38,21 +38,35 @@ MapMap consists of several different windows, icons, and menu options. The main 
 ![layout](documentation_images/layout.png)
 
 ## Library
-The Library contains the collection of sources that can be used in MapMap. The supported sources are color shapes, video (see preferred video formats below), still images including animated GIFs, webcams (currently on Linux version only) and more to come.
+The Library contains the collection of sources that can be used in MapMap. The supported sources are:
 
-Imported media can be viewed within the library. Importing new media can be done in multiple ways:
+- media files such as:
+ - video (see preferred video formats below)
+ - still images (PNG, JPEG, etc)
+ - animated GIFs
+- color paints/masks
+- webcams (currently on Linux version only)
+- ... and more to come in future versions
+
+### Media Sources
+
+Importing new media can be done in multiple ways:
+
 - Clicking on File > Import media file...
 - Hitting CTRL+I
 - Clicking the icon in the toolbar
 - Drag and drop media directly into library window
 
 Preferred Video Formats:
+
 - Containers: .mov, .avi, .mp4, .ogg, .ogv
 - Video codec formats: Motion-JPEG / Photo-JPEG, MPEG4, Apple Pro Res 422
 
 ![import_media_file](documentation_images/import_media_file.png)
 
 A introductory media / tutorial startup file can be found here: (INSERT LINK TO NEW MEDIA ? TUTORIAL ZIP FILE) 
+
+### Color Sources
 
 Adding color paints to the library can be done by choosing File > Add color paint or by clicking on the icon in the toolbar.
 
