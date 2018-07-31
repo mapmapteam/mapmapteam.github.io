@@ -168,6 +168,13 @@ To load a project from a file, choose "File > Open...".
 - The #mapmap IRC channel on Freenode
 - Write to us at info at mapmap dot info
 
+# Authors
+- Sofian Audry: lead developer, user interface designer, project manager.
+- Dame Diongue: developer.
+- Alexandre Quessy: release manager, developer, technical writer, project manager.
+- Mike Latona: user interface designer.
+- Vasilis Liaskovitis: developer.
+
 # Partners
 MapMap is made possible thanks to the generous support of the following organizations:
 - [Organisation Internationale de la Francophonie](https://www.francophonie.org)
