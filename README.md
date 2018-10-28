@@ -163,6 +163,20 @@ To load a project from a file, choose "File > Open...".
 
 ![file_open_document](documentation_images/open_document.png)
 
+## External Control using OpenSoundControl (OSC)
+
+IMPORTANT: This feature is currently not supported on macOS.
+
+MapMap supports the [OpenSoundControl](http://opensoundcontrol.org/introduction-osc) communication protocol. Currently supported actions allow full control of existing sources and layers, such as changing a source file, adjusting opacity and visibility, changing volume, etc.
+
+The default OSC port can be changed from the Preferences menu.
+
+MapMap provides a flexible way to control groups of sources and layers using [regular expressions](https://en.wikipedia.org/wiki/Regular_expression). For example the following OSC message will change the opacity of all sources whose name starts with "movie-" to 50%:
+
+```/mapmap/paint/opacity ,sf "movie-*" 0.5```
+
+[Read the MapMap OSC reference](https://github.com/mapmapteam/mapmap/wiki/OSC)
+
 # Support or Contact
 - [MapMap mailing list](https://listes.koumbit.net/cgi-bin/mailman/listinfo/mapmap-list-mapmap.info)
 - The #mapmap IRC channel on Freenode
