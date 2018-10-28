@@ -178,6 +178,10 @@ MapMap provides a flexible way to control groups of sources and layers using [re
 [Read the MapMap OSC reference](https://github.com/mapmapteam/mapmap/wiki/OSC)
 
 # Support or Contact
+
+To report a problem or suggest an enhancement please [open a new issue on GitHub](https://github.com/mapmapteam/mapmap/issues/new)
+
+Other ways to reach us:
 - [MapMap mailing list](https://listes.koumbit.net/cgi-bin/mailman/listinfo/mapmap-list-mapmap.info)
 - The #mapmap IRC channel on Freenode
 - Write to us at info at mapmap dot info
