@@ -1,0 +1,43 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { getLangFromUrl, t } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { href: `/${lang}/`, label: t(lang, 'nav.home') },
+  { href: `/${lang}/download/`, label: t(lang, 'nav.download') },
+  { href: `/${lang}/docs/`, label: t(lang, 'nav.docs') },
+  { href: `/${lang}/support/`, label: t(lang, 'nav.support') },
+];
+
+function isActive(href: string): boolean {
+  if (href === `/${lang}/`) return currentPath === href;
+  return currentPath.startsWith(href);
+}
+---
+
+<nav class="bg-gray-900 text-white">
+  <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href={`/${lang}/`} class="text-xl font-bold tracking-tight">MapMap</a>
+    <div class="flex items-center gap-6">
+      <ul class="flex gap-4">
+        {navItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class:list={[
+                'hover:text-blue-300 transition-colors',
+                { 'text-blue-300 font-medium': isActive(item.href) },
+              ]}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <LanguageSwitcher />
+    </div>
+  </div>
+</nav>

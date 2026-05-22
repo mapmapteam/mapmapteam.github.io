@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getLangFromUrl } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return [{ params: { locale: 'en' } }, { params: { locale: 'fr' } }];
+}
+
+const lang = getLangFromUrl(Astro.url);
+
+const content = await import(`../../data/${lang}/docs.md`);
+const Content = content.default;
+---
+
+<BaseLayout title="Documentation">
+  <article class="prose prose-lg max-w-none">
+    <Content />
+  </article>
+</BaseLayout>
