@@ -10,9 +10,17 @@ const lang = getLangFromUrl(Astro.url);
 
 const content = await import(`../../data/${lang}/support.md`);
 const Content = content.default;
+
+const descriptions = {
+  en: 'Get help with MapMap projection mapping software. Report bugs, request features, or contact the development team.',
+  fr: 'Obtenez de l\'aide avec le logiciel de projection vidéo MapMap. Signalez des bogues, demandez des fonctionnalités ou contactez l\'équipe de développement.',
+};
 ---
 
-<BaseLayout title={lang === 'fr' ? 'Soutien' : 'Support'}>
+<BaseLayout
+  title={lang === 'fr' ? 'Soutien' : 'Support'}
+  description={descriptions[lang]}
+>
   <article class="prose prose-lg max-w-none">
     <Content />
   </article>

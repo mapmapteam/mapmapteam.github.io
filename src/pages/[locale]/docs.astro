@@ -10,9 +10,17 @@ const lang = getLangFromUrl(Astro.url);
 
 const content = await import(`../../data/${lang}/docs.md`);
 const Content = content.default;
+
+const descriptions = {
+  en: 'Learn how to use MapMap: projection mapping tutorial covering layers, shapes, meshes, OSC control, and more. Complete user guide for beginners and advanced users.',
+  fr: 'Apprenez à utiliser MapMap : tutoriel de projection vidéo couvrant les calques, formes, meshes, contrôle OSC et plus. Guide complet pour débutants et utilisateurs avancés.',
+};
 ---
 
-<BaseLayout title="Documentation">
+<BaseLayout
+  title="Documentation"
+  description={descriptions[lang]}
+>
   <article class="prose prose-lg max-w-none">
     <Content />
   </article>

@@ -10,9 +10,42 @@ const lang = getLangFromUrl(Astro.url);
 
 const content = await import(`../../data/${lang}/download.md`);
 const Content = content.default;
+
+const descriptions = {
+  en: 'Download MapMap for free — open source projection mapping software for Windows, macOS, and Linux. No registration required. Start video mapping in minutes.',
+  fr: 'Téléchargez MapMap gratuitement — logiciel libre de projection vidéo pour Windows, macOS et Linux. Aucune inscription requise. Commencez le video mapping en quelques minutes.',
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'MapMap',
+  description: descriptions[lang],
+  url: 'https://mapmapteam.github.io',
+  applicationCategory: 'MultimediaApplication',
+  operatingSystem: 'Windows, macOS, Linux',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+  license: 'https://opensource.org/licenses/GPL-3.0',
+  softwareVersion: '0.6.3',
+  downloadUrl: 'http://download.mapmap.info/windows/mapmap-0.6.3-x86-installer.exe',
+  screenshot: 'http://projection-mapping.org/wp-content/uploads/2017/08/mapmap-workshop.jpg',
+  author: {
+    '@type': 'Organization',
+    name: 'MapMap Team',
+    url: 'https://mapmapteam.github.io',
+  },
+};
 ---
 
-<BaseLayout title={lang === 'fr' ? 'Télécharger' : 'Download'}>
+<BaseLayout
+  title={lang === 'fr' ? 'Télécharger' : 'Download'}
+  description={descriptions[lang]}
+  jsonLd={jsonLd}
+>
   <article class="prose prose-lg max-w-none">
     <Content />
   </article>
