@@ -1,0 +1,14 @@
+---
+import { getLangFromUrl, t } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<footer class="bg-gray-100 border-t mt-12">
+  <div class="max-w-4xl mx-auto px-4 py-8 text-sm text-gray-600">
+    <p>{t(lang, 'footer.license')}</p>
+    <p class="mt-2">
+      &copy; {new Date().getFullYear()} MapMap Team
+    </p>
+  </div>
+</footer>
