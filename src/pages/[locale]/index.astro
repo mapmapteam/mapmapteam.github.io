@@ -10,9 +10,27 @@ const lang = getLangFromUrl(Astro.url);
 
 const content = await import(`../../data/${lang}/home.md`);
 const Content = content.default;
+
+const descriptions = {
+  en: 'MapMap is a free, open source projection mapping software for artists and small teams. Create stunning video projections on any surface. Download for Windows, macOS, and Linux.',
+  fr: 'MapMap est un logiciel libre et gratuit de projection vidéo (video mapping) pour artistes et petites équipes. Créez des projections visuelles sur toute surface. Disponible sur Windows, macOS et Linux.',
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'MapMap',
+  url: 'https://mapmapteam.github.io',
+  description: descriptions[lang],
+  inLanguage: lang,
+};
 ---
 
-<BaseLayout title={lang === 'fr' ? 'Accueil' : 'Home'}>
+<BaseLayout
+  title={lang === 'fr' ? 'Accueil' : 'Home'}
+  description={descriptions[lang]}
+  jsonLd={jsonLd}
+>
   <article class="prose prose-lg max-w-none">
     <Content />
   </article>

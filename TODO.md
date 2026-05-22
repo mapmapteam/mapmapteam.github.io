@@ -1,0 +1,79 @@
+# SEO Content Strategy — TODO
+
+## 6. Keyword Optimization
+
+### Target Keywords (by page)
+
+**Home page** — primary landing page, should rank for:
+- "free projection mapping software"
+- "open source video mapping"
+- "projection mapping tool for artists"
+- "video mapping software free download"
+- "mapmap projection"
+
+**Download page:**
+- "download projection mapping software free"
+- "video mapping software windows/mac/linux"
+
+**Docs page:**
+- "projection mapping tutorial"
+- "how to use projection mapping software"
+- "video mapping beginner guide"
+
+### Action Items
+
+- [ ] Rewrite home page intro to naturally include target keywords (avoid stuffing — write for humans first, search engines second)
+- [ ] Add a "What is projection mapping?" section on the home page (targets informational queries, builds topical authority)
+- [ ] Ensure each page's H1 contains the primary keyword for that page
+- [ ] Add internal links between pages (e.g., docs page links to download, home links to docs)
+- [ ] Submit sitemap to Google Search Console
+- [ ] Submit sitemap to Bing Webmaster Tools
+- [ ] List MapMap on free software directories:
+  - AlternativeTo.net
+  - SourceForge
+  - Free Software Directory (FSF)
+  - awesome-projection-mapping lists on GitHub
+  - FLOSS Manuals
+- [ ] Add the site to relevant "projection mapping software" comparison articles (reach out to authors)
+
+## 7. Blog / Tutorials Section
+
+### Why
+
+- Fresh content signals authority to Google (active project = trustworthy)
+- Tutorials rank for long-tail queries ("how to projection map on a building", "mapmap osc tutorial")
+- Shareable content drives backlinks and social traffic
+- Artist showcases build community and social proof
+
+### Implementation Plan
+
+1. Add a blog content directory: `src/data/en/blog/` and `src/data/fr/blog/`
+2. Create a blog listing page at `/[locale]/blog/`
+3. Create a dynamic route for blog posts: `/[locale]/blog/[slug]/`
+4. Each post is a markdown file with frontmatter: title, date, description, tags, author
+5. Add blog link to navigation
+6. Add an RSS feed (Astro has `@astrojs/rss` for this — great for SEO and subscribers)
+
+### Content Ideas (prioritized by SEO impact)
+
+**High impact (targets search queries people actually make):**
+- [ ] "Getting Started with Projection Mapping: A Beginner's Guide"
+- [ ] "How to Set Up a Projection Mapping Installation for Live Events"
+- [ ] "Projection Mapping on Buildings: Step-by-Step Tutorial"
+- [ ] "Free Projection Mapping Software Comparison (2025)"
+- [ ] "How to Use OSC to Control Video Mapping in Real-Time"
+
+**Medium impact (community building, shareable):**
+- [ ] Artist showcase: interview a MapMap user, feature their work
+- [ ] "MapMap at [Festival Name]: Recap and Photos"
+- [ ] "What's New in MapMap 0.6.3"
+- [ ] Video tutorials (embed YouTube/Vimeo — also good for video SEO)
+
+**Low effort, ongoing:**
+- [ ] Release notes for each new version
+- [ ] Quick tips (under 300 words, one specific technique per post)
+
+### Publishing Cadence
+
+Aim for 1-2 posts per month. Consistency matters more than volume.
+Even a quarterly update post is better than silence.

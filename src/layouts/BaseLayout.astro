@@ -1,15 +1,27 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
-import { getLangFromUrl } from '../i18n/utils';
+import { getLangFromUrl, getLocalizedPath } from '../i18n/utils';
+import { languages } from '../i18n/ui';
+import type { Locale } from '../i18n/utils';
 
 interface Props {
   title: string;
   description?: string;
+  ogImage?: string;
+  jsonLd?: Record<string, unknown>;
 }
 
-const { title, description = 'MapMap - open source video mapping software' } = Astro.props;
+const {
+  title,
+  description = 'MapMap is a free, open source projection mapping software for artists and creative teams. Available on Windows, macOS, and Linux.',
+  ogImage = 'http://projection-mapping.org/wp-content/uploads/2017/08/mapmap-workshop.jpg',
+  jsonLd,
+} = Astro.props;
+
 const lang = getLangFromUrl(Astro.url);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -20,6 +32,43 @@ const lang = getLangFromUrl(Astro.url);
     <meta name="description" content={description} />
     <title>{title} | MapMap</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl.href} />
+
+    <!-- Alternate language links -->
+    {Object.keys(languages).map((code) => (
+      <link
+        rel="alternate"
+        hreflang={code}
+        href={new URL(getLocalizedPath(currentPath, code as Locale), Astro.site).href}
+      />
+    ))}
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(getLocalizedPath(currentPath, 'en'), Astro.site).href}
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl.href} />
+    <meta property="og:title" content={`${title} | MapMap`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_US'} />
+    <meta property="og:site_name" content="MapMap" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | MapMap`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- JSON-LD Structured Data -->
+    {jsonLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )}
   </head>
   <body class="min-h-screen flex flex-col bg-white text-gray-900">
     <Navigation />
