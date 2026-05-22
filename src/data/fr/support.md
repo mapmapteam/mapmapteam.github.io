@@ -6,7 +6,7 @@ Pour signaler un problème ou suggérer une amélioration, veuillez [ouvrir un n
 
 - [Liste de diffusion MapMap](https://listes.koumbit.net/cgi-bin/mailman/listinfo/mapmap-list-mapmap.info)
 - Le canal IRC #mapmap sur Freenode
-- Écrivez-nous à info arobase mapmap point info
+- Écrivez-nous à mapmap arobase artpluscode point com
 
 ## Auteurs
 

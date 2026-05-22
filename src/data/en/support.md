@@ -6,7 +6,7 @@ To report a problem or suggest an enhancement, please [open a new issue on GitHu
 
 - [MapMap mailing list](https://listes.koumbit.net/cgi-bin/mailman/listinfo/mapmap-list-mapmap.info)
 - The #mapmap IRC channel on Freenode
-- Write to us at info at mapmap dot info
+- Write to us at mapmap at artpluscode dot com
 
 ## Authors
 

@@ -1,18 +1,16 @@
 # Télécharger et installer
 
-La dernière version de MapMap est disponible aux liens suivants :
+Une nouvelle version arrive bientôt ! Consultez la [page des versions sur GitHub](https://github.com/mapmapteam/mapmap/releases) pour la dernière version.
 
-- [macOS 0.6.2 DMG](http://download.mapmap.info/osx/MapMap-0.6.2-1.dmg) ou [macOS 0.6.2 ZIP](http://download.mapmap.info/osx/MapMap-0.6.2-1_macOS.zip) — Les utilisateurs macOS doivent également installer [GStreamer](https://gstreamer.freedesktop.org/data/pkg/osx/1.14.0/gstreamer-1.0-1.14.0-x86_64.pkg) séparément.
-- [Dépôt APT pour Linux](https://launchpad.net/~mapmap/+archive/ubuntu/mapmap)
-- [Installateur Windows 0.6.3](http://download.mapmap.info/windows/mapmap-0.6.3-x86-installer.exe)
-- [Code source 0.6.2 tarball](http://download.mapmap.info/tarballs/mapmap-0.6.2.tar.gz)
-- [Dépôt Git du code source](https://github.com/mapmapteam/mapmap)
+## Plateformes disponibles
 
-## Versions précédentes
+- **macOS** — Installateur DMG (bientôt disponible)
+- **Windows** — Installateur (bientôt disponible)
+- **Linux (Debian/Ubuntu)** — [Dépôt APT](https://launchpad.net/~mapmap/+archive/ubuntu/mapmap)
 
-- [macOS](http://download.mapmap.info/osx/)
-- [Windows](http://download.mapmap.info/windows/)
-- [Tarballs du code source](http://download.mapmap.info/tarballs)
+## Code source
+
+- [Code source sur GitHub](https://github.com/mapmapteam/mapmap)
 
 ## Lancer l'application
 

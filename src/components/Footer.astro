@@ -5,10 +5,21 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <footer class="bg-gray-100 border-t mt-12">
-  <div class="max-w-4xl mx-auto px-4 py-8 text-sm text-gray-600">
-    <p>{t(lang, 'footer.license')}</p>
-    <p class="mt-2">
-      &copy; {new Date().getFullYear()} MapMap Team
-    </p>
+  <div class="max-w-4xl mx-auto px-4 py-8 text-sm text-gray-600 flex items-center justify-between">
+    <div>
+      <p>{t(lang, 'footer.license')}</p>
+      <p class="mt-2">
+        &copy; {new Date().getFullYear()} MapMap Team
+      </p>
+    </div>
+    <a
+      href="https://github.com/mapmapteam/mapmap"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="MapMap on GitHub"
+      class="text-gray-400 hover:text-gray-700 transition-colors"
+    >
+      <img src="/icons/github.svg" alt="" class="w-8 h-8" aria-hidden="true" />
+    </a>
   </div>
 </footer>
