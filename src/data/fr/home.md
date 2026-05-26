@@ -18,3 +18,4 @@ MapMap est rendu possible grâce au soutien généreux des organisations suivant
 - [Conseil des Arts et des Lettres du Québec](https://www.calq.gouv.qc.ca)
 - [Millumin](http://www.millumin.com)
 - Alton '38 and Adelaide Hamm Campus Activity Fund
+- [Art Plus Code Inc.](https://www.artpluscode.com/)

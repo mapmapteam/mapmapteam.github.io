@@ -10,8 +10,8 @@ Pour signaler un problème ou suggérer une amélioration, veuillez [ouvrir un n
 
 ## Auteurs
 
-- **Sofian Audry :** développeur principal, designer d'interface, gestionnaire de projet.
+- **Alexandre Quessy :** développeur principal, gestionnaire de versions, rédacteur technique, gestionnaire de projet.
+- **Sofian Audry :** développeur principal original, designer d'interface, gestionnaire de projet.
 - **Dame Diongue :** développeur.
-- **Alexandre Quessy :** gestionnaire de versions, développeur, rédacteur technique, gestionnaire de projet.
 - **Mike Latona :** designer d'interface.
 - **Vasilis Liaskovitis :** développeur.

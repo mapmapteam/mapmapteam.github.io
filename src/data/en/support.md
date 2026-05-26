@@ -10,8 +10,8 @@ To report a problem or suggest an enhancement, please [open a new issue on GitHu
 
 ## Authors
 
-- **Sofian Audry:** lead developer, user interface designer, project manager.
+- **Alexandre Quessy:** lead developer, release manager, technical writer, project manager.
+- **Sofian Audry:** original lead developer, user interface designer, project manager.
 - **Dame Diongue:** developer.
-- **Alexandre Quessy:** release manager, developer, technical writer, project manager.
 - **Mike Latona:** user interface designer.
 - **Vasilis Liaskovitis:** developer.
