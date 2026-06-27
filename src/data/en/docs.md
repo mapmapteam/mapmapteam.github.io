@@ -28,7 +28,7 @@ The Library contains the collection of sources that can be used in MapMap. The s
   - Still images (PNG, JPEG, etc)
   - Animated GIFs
 - Color paints/masks
-- Webcams (currently on Linux version only)
+- Webcams (on macOS and Linux)
 - ...and more to come in future versions
 
 ### Media Sources
@@ -150,7 +150,7 @@ Display Controls give the user the ability to select and move vertices both in t
 
 ### Save the Project to a File
 
-To save the current project, choose "File > Save as..." and then choose a file name. The file extension is ".mmp", but the file format is simply XML.
+To save the current project, choose "File > Save as..." and then choose a file name. The file extension is ".mmp", but the file format is simply JSON.
 
 ![file save as](/images/save_as.png)
 
@@ -162,16 +162,14 @@ To load a project from a file, choose "File > Open...".
 
 ## External Control (OSC)
 
-**IMPORTANT:** This feature is currently not supported on macOS.
-
 MapMap supports the [OpenSoundControl](http://opensoundcontrol.org/introduction-osc) communication protocol. Currently supported actions allow full control of existing sources and layers, such as changing a source file, adjusting opacity and visibility, changing volume, etc.
 
 The default OSC port can be changed from the Preferences menu.
 
-MapMap provides a flexible way to control groups of sources and layers using [regular expressions](https://en.wikipedia.org/wiki/Regular_expression). For example, the following OSC message will change the opacity of all sources whose name starts with "movie-" to 50%:
+MapMap provides a flexible way to control groups of sources and layers using wildcards in their names: `*` stands for any sequence of characters, and `?` for a single character. For example, the following OSC message will change the opacity of all sources whose name starts with "movie-" to 50%:
 
 ```
-/mapmap/paint/opacity ,sf "movie-*" 0.5
+/mapmap/source/opacity ,sf "movie-*" 0.5
 ```
 
 [Read the MapMap OSC reference](https://github.com/mapmapteam/mapmap/wiki/OSC)

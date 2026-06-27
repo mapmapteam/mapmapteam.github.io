@@ -28,7 +28,7 @@ La Bibliothèque contient la collection de sources utilisables dans MapMap. Les 
   - Images fixes (PNG, JPEG, etc.)
   - GIF animés
 - Couleurs/masques
-- Webcams (actuellement uniquement sur la version Linux)
+- Webcams (sur macOS et Linux)
 - ...et d'autres à venir dans les futures versions
 
 ### Sources média
@@ -150,7 +150,7 @@ Les contrôles d'affichage donnent à l'utilisateur la possibilité de sélectio
 
 ### Sauvegarder le projet dans un fichier
 
-Pour sauvegarder le projet en cours, choisissez « Fichier > Enregistrer sous... » puis choisissez un nom de fichier. L'extension est « .mmp » et le format est simplement du XML.
+Pour sauvegarder le projet en cours, choisissez « Fichier > Enregistrer sous... » puis choisissez un nom de fichier. L'extension est « .mmp » et le format est simplement du JSON.
 
 ![enregistrer sous](/images/save_as.png)
 
@@ -162,16 +162,14 @@ Pour charger un projet depuis un fichier, choisissez « Fichier > Ouvrir... ».
 
 ## Contrôle externe (OSC)
 
-**IMPORTANT :** Cette fonctionnalité n'est actuellement pas supportée sur macOS.
-
 MapMap supporte le protocole de communication [OpenSoundControl](http://opensoundcontrol.org/introduction-osc). Les actions actuellement supportées permettent un contrôle complet des sources et calques existants, comme changer un fichier source, ajuster l'opacité et la visibilité, modifier le volume, etc.
 
 Le port OSC par défaut peut être modifié depuis le menu Préférences.
 
-MapMap offre un moyen flexible de contrôler des groupes de sources et de calques en utilisant des [expressions régulières](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re). Par exemple, le message OSC suivant changera l'opacité de toutes les sources dont le nom commence par « movie- » à 50% :
+MapMap offre un moyen flexible de contrôler des groupes de sources et de calques en utilisant des jokers dans leur nom : `*` remplace n'importe quelle suite de caractères, et `?` un seul caractère. Par exemple, le message OSC suivant changera l'opacité de toutes les sources dont le nom commence par « movie- » à 50% :
 
 ```
-/mapmap/paint/opacity ,sf "movie-*" 0.5
+/mapmap/source/opacity ,sf "movie-*" 0.5
 ```
 
 [Lire la référence OSC de MapMap](https://github.com/mapmapteam/mapmap/wiki/OSC)
