@@ -12,8 +12,8 @@ const content = await import(`../../data/${lang}/download.md`);
 const Content = content.default;
 
 const descriptions = {
-  en: 'Download MapMap for free — open source projection mapping software for Windows, macOS, and Linux. No registration required. Start video mapping in minutes.',
-  fr: 'Téléchargez MapMap gratuitement — logiciel libre de projection vidéo pour Windows, macOS et Linux. Aucune inscription requise. Commencez le video mapping en quelques minutes.',
+  en: 'Download MapMap for free — open source projection mapping software for macOS. Source code for Windows and Linux. No registration required.',
+  fr: 'Téléchargez MapMap gratuitement — logiciel libre de projection vidéo pour macOS. Code source pour Windows et Linux. Aucune inscription requise.',
 };
 
 const jsonLd = {
@@ -23,14 +23,16 @@ const jsonLd = {
   description: descriptions[lang],
   url: 'https://mapmapteam.github.io',
   applicationCategory: 'MultimediaApplication',
-  operatingSystem: 'Windows, macOS, Linux',
+  operatingSystem: 'macOS 13 or later',
+  softwareVersion: '1.0.0-beta.1',
+  downloadUrl: 'https://github.com/mapmapteam/mapmap/releases/download/1.0.0-beta.1/MapMap-1.0.0-beta.1-macos-universal.dmg',
+  releaseNotes: 'https://github.com/mapmapteam/mapmap/releases/tag/1.0.0-beta.1',
   offers: {
     '@type': 'Offer',
     price: '0',
     priceCurrency: 'USD',
   },
   license: 'https://opensource.org/licenses/GPL-3.0',
-  screenshot: 'http://projection-mapping.org/wp-content/uploads/2017/08/mapmap-workshop.jpg',
   author: {
     '@type': 'Organization',
     name: 'MapMap Team',
